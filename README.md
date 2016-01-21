@@ -18,17 +18,16 @@ A Windows Server 2008 R2 VM with SQL Server Express 2008 R2 SP2 powered by Vagra
 * The box has been created with [packer.io](http://www.packer.io/) using the
   templates made available [here](https://github.com/opentable/packer-images).
 
-More information can be found on the [box page at Vagrant Cloud](https://vagrantcloud.com/opentable/boxes/win-2008r2-standard-amd64-nocm).
+More information can be found on the [box page at Vagrant Cloud](https://vagrantcloud.com/opentable/boxes/win-2012r2-standard-amd64-nocm).
 
 ## Usage
 
 ```sh
 git clone https://github.com/fgrehm/vagrant-mssql-express.git
 cd vagrant-mssql-express
-# Download SQL Server with Tools installer
-wget http://download.microsoft.com/download/0/4/B/04BE03CD-EAF3-4797-9D8D-2E08E316C998/SQLEXPRWT_x64_ENU.exe
 vagrant up
-# Get a coffee as it will take a while for it to finish provisioning
+# Get a coffee as it will take a while for it to finish provisioning. During the provisioning process, the SQL Server installer
+# will be downloaded, which may take quite some time depending on your connection speed.
 ```
 
 Then test the connection with the SQL Server using `telnet 192.168.50.4 1433`
