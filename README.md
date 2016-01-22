@@ -1,6 +1,6 @@
 # vagrant-mssql-express
 
-A Windows Server 2008 R2 VM with SQL Server Express 2008 R2 SP2 powered by Vagrant.
+A Windows Server 2012 R2 VM with SQL Server Express 2012 R2 SP2 powered by Vagrant.
 
 ## Requirements
 
